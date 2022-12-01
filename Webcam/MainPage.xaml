@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="Webcam.MainPage">
+
+    <Grid>
+        <xct:CameraView x:Name="VideoCapture" CaptureMode="Video" CameraOptions="Back" /> 
+
+
+        <Grid x:Name="ButtonsPanel">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button FontFamily="Material" Text="&#xefeb;" x:Name="Cameraswitch" Clicked="Cameraswitch_Clicked"/>
+            <Button FontFamily="Material" Text="&#xe5ce;" x:Name="Collapose" Clicked="Collapose_Clicked" Grid.Column="4"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
